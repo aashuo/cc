@@ -1,0 +1,92 @@
+/* EXAMPLE OF ANIMATE.CSS */
+
+nav{
+    background-color: #433E3D;
+    height: 100px;
+    font-size: 1.2em;
+    
+    /* Vendor prefix list: https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix */
+    /*Chrome, Safari*/
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 1s;
+    /*Firefox*/
+    -moz-animation-duration: 3s;
+    -moz-animation-delay: 1s;
+    /*Opera*/
+    -o-animation-duration: 3s;
+    -o-animation-delay: 1s;
+    /*IE and Edge*/
+    -ms-animation-duration: 3s;
+    -ms-animation-delay: 1s;
+}
+
+
+/* 
+For an excellent overview of CSS animations, consult the following resource: https://css-tricks.com/almanac/properties/a/animation/ 
+
+THE FOLLOWING CODE IS EQUIVALENT TO ABOVE; BUT WITHOUT ANIMATE.CSS 
+
+nav{
+    background-color: #433E3D;
+    height: 100px;
+    font-size: 1.2em;
+
+    -webkit-animation: fadeIn 4s;
+    -moz-animation: fadeIn 4s;
+    -o-animation: fadeIn 4s;
+    animation: fadeIn 4s;
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity: 0;}
+25% {opacity: 0.25;}
+50% {opacity: 0.50;}
+75% {opacity: 0.75;}
+100% {opacity: 1.00;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity: 0;}
+25% {opacity: 0.25;}
+50% {opacity: 0.50;}
+75% {opacity: 0.75;}
+100% {opacity: 1.00;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity: 0;}
+25% {opacity: 0.25;}
+50% {opacity: 0.50;}
+75% {opacity: 0.75;}
+100% {opacity: 1.00;}
+}
+
+@keyframes fadeIn {
+0% {opacity: 0;}
+25% {opacity: 0.25;}
+50% {opacity: 0.50;}
+75% {opacity: 0.75;}
+100% {opacity: 1.00;}
+}
+*/
+
+/* Unvisited Link */
+nav div a:link{
+    color: #909090;
+}
+
+/* Visited Link */
+nav div a:visited{
+    color: #909090;
+}
+
+/* Mouse Over Link */
+nav div a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+/* Selected Link */
+nav div a:active{
+    color: #909090;
+}
