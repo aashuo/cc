@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+      
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+      
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <title>Week 14: Animations</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <!-- Static and Fixed Example -->
+        <div class="row">
+            <div class="col p-0">
+                <nav class="animated fadeIn d-flex flex-row justfify-content-end align-items-center p-2">
+                    <div class="mr-auto p-2"><a href="#"><i class="fas fa-code"></i> Front-End Web Development</a></div>
+                    <div class="p-2"><a href="#"><i class="fas fa-home"></i> Home</a></div>
+                    <div class="p-2"><a href="#"><i class="fas fa-comments"></i> Messages</a></div>
+                    <div class="p-2"><a href="#"><i class="fas fa-sign-in-alt"></i> Sign-In</a></div>
+                </nav>
+            </div>
+            <div class="row">
+                <div id="message" class="col p-3">
+                    <p></p>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. To use the full version of jQuery 3 core library, use this script reference instead of the slim library. -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
+    <script>
+        $(document).ready(function(){
+            console.log( "Hello World!!! Stick around for the summer where we will learn about the jQuery 3 core library, Adobe Captivate, and maybe Adobe XD if I can find the time to fit it into the schedule...If you need a 3 credit course requirement, let me know and we can work out something with Linda." );
+            $("#message").hide().fadeIn(3000, function(){
+                $("#message p").text("Hello World!!! Stick around for the summer where we will learn about the jQuery 3 core library, Adobe Captivate, and maybe Adobe XD if I can find the time to fit it into the schedule...If you need a 3 credit course requirement, let me know and we can work out something with Linda.");
+            });
+        });
+    </script>
+  </body>
+</html>
